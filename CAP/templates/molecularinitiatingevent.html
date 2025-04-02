@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molecular Initiating Event</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Logo (Clickable link to go to home page) -->
+    <div class="logo-container">
+        <a href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='VHP_logo.png') }}" height="150px" alt="Logo">
+        </a>
+    </div>
+    
+    <!-- Title Container for second page -->
+    <div class="title-container">
+        <div class="title-text">Central Access Point</div>
+    </div>
+    
+    <!-- Horizontal line -->
+    <hr>
+
+    <!-- Buttons -->
+    <div class="button-container">
+        <a href="{{ url_for('second') }}">
+            <button class="custom-button-selected">S T A G E S</button>
+        </a>
+        <a href="{{ url_for('workflows') }}">
+            <button class="custom-button">W O R K F L O W</button>
+        </a>
+        <a href="{{ url_for('tutorials') }}">
+            <button class="custom-button">T U T O R I A L</button>
+        </a>
+        <a href="{{ url_for('data') }}">
+            <button class="custom-button">D A T A</button>
+        </a>   
+    </div>
+
+    <div class="custom-button-shape-mie">M O L E C U L A R &nbsp;&nbsp;&nbsp; I N I T I A T I N G &nbsp;&nbsp;&nbsp; E V E N T</div>
+
+    <br></br>
+    <h5>Placeholder for tools</h5>
+</body>
+</html>
