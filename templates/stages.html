@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stages</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Logo (Clickable link to go to home page) -->
+    <div class="logo-container">
+        <a href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='VHP_logo.png') }}" height="150px" alt="Logo">
+        </a>
+    </div>
+    
+    <!-- Title Container -->
+    <div class="title-container">
+        <div class="title-text">Central Access Point</div>
+    </div>
+    
+    <!-- Horizontal line -->
+    <hr>
+
+    <!-- Vertical line -->
+    <div class="vertical-line-root"></div>
+    <div class="vertical-line1"></div>
+    <div class="vertical-line2"></div>
+    <div class="vertical-line3"></div>
+    <div class="vertical-line4"></div>
+    <div class="vertical-line5"></div>
+    <div class="vertical-line6"></div>
+
+
+    <!-- Buttons -->
+    <div class="button-container">
+        <a href="{{ url_for('second') }}">
+            <button class="custom-button-selected">S T A G E S</button>
+        </a>
+        <a href="{{ url_for('workflows') }}">
+            <button class="custom-button">W O R K F L O W</button>
+        </a>
+        <a href="{{ url_for('tutorials') }}">
+            <button class="custom-button">T U T O R I A L</button>
+        </a>
+        <a href="{{ url_for('data') }}">
+            <button class="custom-button">D A T A</button>
+        </a>         
+    </div>
+
+    <!-- Horizontal line above the squares -->
+    <hr class="squares-line">
+
+
+    <!-- Clickable squares -->
+    <div class="squares-container">
+        <a href="{{ url_for('square1') }}" class="square">
+            <img src="{{ url_for('static', filename='external_exposure.png') }}" class="square-icon">
+        </a>
+        <a href="{{ url_for('square2') }}" class="square">
+            <img src="{{ url_for('static', filename='internal_exposure.png') }}" class="square-icon">
+        </a>
+        <a href="{{ url_for('square3') }}" class="square">
+            <img src="{{ url_for('static', filename='molecular_initiating_event.png') }}" class="square-icon">
+        </a>
+        <a href="{{ url_for('square4') }}" class="square">
+            <img src="{{ url_for('static', filename='adverse_outcome_pathway.png') }}" class="square-icon">
+        </a>
+        <a href="{{ url_for('square5') }}" class="square">
+            <img src="{{ url_for('static', filename='toxic_effect.svg') }}" class="square-icon">
+        </a>
+        <a href="{{ url_for('square6') }}" class="square">
+            <img src="{{ url_for('static', filename='bio_marker.svg') }}" class="square-icon">
+        </a>
+    </div>
+
+    <!-- Labels Below Squares -->
+    <div class="labels-container">
+        <div class="label">E X T E R N A L  <br> E X P O S U R E</div>
+        <div class="label">I N T E R N A L <br> E X P O S U R E</div>
+        <div class="label">M O L E C U L A R <br> I N I T I A T I N G <br> E V E N T</div>
+        <div class="label">A D V E R S E <br> O U T C O M E <br> P A T H W AY</div>
+        <div class="label">T O X I C <br> E F F E C T</div>
+        <div class="label">B I O <br> M A R K E R</div>
+    </div>
+
+    <br><br>
+    
+</body>
+</html>
